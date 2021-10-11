@@ -1,0 +1,40 @@
+.scroll {
+  height: 320px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.bookmarks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  .bookmark__item {
+    border: 2px rgb(147, 95, 160) solid;
+
+    background-color: rgb(182, 132, 218);
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+  }
+  .bookmark__container {
+    display: flex;
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .bookmark__info {
+    padding: 5px;
+    flex-direction: column;
+
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    a {
+      width: 100%;
+      color: rgb(255, 255, 255);
+    }
+  }
+}

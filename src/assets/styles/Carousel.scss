@@ -1,0 +1,13 @@
+.wrap {
+  h4 {
+    margin-left: 15px;
+  }
+  .carousel {
+    padding: 30px 15px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  & ::-webkit-scrollbar {
+    display: none;
+  }
+}

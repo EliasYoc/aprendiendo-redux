@@ -1,0 +1,26 @@
+.header {
+  height: 60px;
+  background: linear-gradient(
+    to right,
+    rgb(189, 42, 189) 10%,
+    rgb(87, 134, 196) 90%
+  );
+  display: flex;
+  justify-content: space-between;
+  * {
+    margin: 0;
+    outline: 1px red solid;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    > li {
+      a {
+        color: white;
+        .active {
+          color: red;
+        }
+      }
+    }
+  }
+}
